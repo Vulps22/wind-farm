@@ -1,0 +1,8 @@
+{
+  "name": "WindFarm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "cd801f20"
+}

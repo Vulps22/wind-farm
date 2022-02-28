@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "WindFarm",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
