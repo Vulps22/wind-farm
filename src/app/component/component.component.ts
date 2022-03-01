@@ -10,7 +10,7 @@ export class ComponentComponent implements OnInit {
   @Input() index: number; // part number based on it's position in the array
 
   partNumber = "00";
-  isDamaged = false;
+  isDamaged = 0;
   constructor() {}
 
   ngOnInit() {
@@ -23,7 +23,11 @@ export class ComponentComponent implements OnInit {
     if(!isNaN(+this.comp)){
       this.comp = "OKAY";
     }else{
-      this.isDamaged = true;
+      if(this.comp == "Coating Damage and Lightning Strike"){
+        this.isDamaged = 2;
+      }else{
+        this.isDamaged = 1
+      }
     }
 
     console.log("Part: " + this.partNumber + " " + isNaN(+this.comp));
