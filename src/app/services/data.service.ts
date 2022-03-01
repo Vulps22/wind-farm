@@ -10,8 +10,8 @@ import { catchError, retry } from 'rxjs/operators'
 })
 export class DataService {
 /*Remember to toggle this back to production URL*/
-  diagnosticURL = 'php/diagnosis.php'
- // diagnosticURL = 'http://localhost/diagnosis.php'
+ // diagnosticURL = 'php/diagnosis.php'
+  diagnosticURL = 'http://localhost/php/diagnosis.php'
 
   //cannot call this components as that clashes with Angular's components. Abreviated to comps
   public comps: String[];
