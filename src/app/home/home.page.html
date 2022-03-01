@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Inbox
+      Diagnostic
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,12 +14,12 @@
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">
-        Inbox
+        Diagnostic
       </ion-title>
     </ion-toolbar>
   </ion-header>
   
   <ion-list>
-    <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
+    <app-component *ngFor="let comp of getComponents()" [comp]="comp"></app-component>
   </ion-list>
 </ion-content>
