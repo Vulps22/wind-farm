@@ -10,7 +10,7 @@ import { catchError, retry } from 'rxjs/operators'
 })
 export class DataService {
 
-  //diagnosticURL = 'php/diagnosis.php'
+ // diagnosticURL = 'php/diagnosis.php'
   diagnosticURL = 'http://localhost/diagnosis.php'
 
   //cannot call this components as that clashes with Angular's components. Abreviated to comps
@@ -19,7 +19,6 @@ export class DataService {
   public ticks = 0;
 
   constructor(private http: HttpClient) { 
-    console.log("boo")
     this.getFromServer().subscribe((data: String[]) => {
       this.comps = data
     })
@@ -31,9 +30,6 @@ export class DataService {
   }
 
   public getComponents(): String[] {
-    console.log("Get from server=====")
-    console.log(this.comps)
-    console.log("===============")
     return this.comps;
   }
 }
